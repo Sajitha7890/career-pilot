@@ -31,7 +31,7 @@ CareerPilot is a simple, interactive career guidance website designed to help st
 
 🌐 Live Website
 
-"Visit CareerPilot" (https://sajitha7890.github.io/careerpilot/)
+"Visit CareerPilot" (https://sajitha7890.github.io/career-pilot/)
 
 📂 Project Structure
 
