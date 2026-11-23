@@ -1,9 +1,10 @@
 # career-pilot
 
-team member: 
-Sajitha MS - ENG25CS0276
-Lakshmi nirvanashetti - ENG25CS0255
-Sanjana HA - ENG25CS0278
+team member:     
+Sajitha MS - ENG25CS0276      
+Lakshmi nirvanashetti - ENG25CS0255     
+Sanjana HA - ENG25CS0278   
+
 career pilot
 🚀 CareerPilot – Career Discovery & Guidance Website
 
