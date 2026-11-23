@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f8f7ff;
+    color: #252344;
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+
+header {
+    background: white;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+}
+
+.logo {
+    color: #7353d6;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.navbar ul li a:hover {
+    color: #7353d6;
+}
+
+/* HOME */
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #e9e2ff, #d9e8ff);
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 46px;
+    color: #34246d;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.btn, .main-btn {
+    display: inline-block;
+    background: #7353d6;
+    color: white;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.btn:hover, .main-btn:hover {
+    background: #5035a9;
+    transform: translateY(-2px);
+}
+
+/* ABOUT */
+
+.about {
+    padding: 65px 10%;
+    text-align: center;
+}
+
+.about h2, .feature-section h2 {
+    font-size: 30px;
+    color: #34246d;
+    margin-bottom: 15px;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    color: #666;
+}
+
+/* FEATURES */
+
+.feature-section {
+    padding: 65px 10%;
+    text-align: center;
+}
+
+.feature-section:nth-of-type(even) {
+    background: #f0edff;
+}
+
+.feature-section > p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.feature-card {
+    background: white;
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: left;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.06);
+}
+
+.feature-card label {
+    display: block;
+    font-weight: 600;
+    margin: 15px 0 7px;
+}
+
+.feature-card input,
+.feature-card select,
+.feature-card textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    background: #fff;
+}
+
+.feature-card input:focus,
+.feature-card select:focus,
+.feature-card textarea:focus {
+    border-color: #7353d6;
+}
+
+.feature-card textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* RESULTS */
+
+.hidden {
+    display: none;
+}
+
+.result-box {
+    background: white;
+    max-width: 750px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+.result-box h3 {
+    color: #7353d6;
+    margin-bottom: 15px;
+}
+
+.result-item, .roadmap-step {
+    background: #f5f2ff;
+    padding: 18px;
+    margin: 12px 0;
+    border-radius: 10px;
+}
+
+.result-item h4 {
+    color: #7353d6;
+    margin-bottom: 5px;
+}
+
+#roadmapResult, #skillResult, #simulationTask {
+    margin-top: 20px;
+}
+
+.skill-tag {
+    display: inline-block;
+    background: #eee8ff;
+    color: #5035a9;
+    padding: 7px 12px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+/* CHAT */
+
+.chat-messages {
+    background: #f7f5ff;
+    border-radius: 10px;
+    padding: 15px;
+    height: 250px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+.bot-message, .user-message {
+    padding: 12px;
+    border-radius: 12px;
+    margin: 10px 0;
+    max-width: 90%;
+}
+
+.bot-message {
+    background: #e9e2ff;
+    color: #34246d;
+}
+
+.user-message {
+    background: #7353d6;
+    color: white;
+    margin-left: auto;
+}
+
+/* FOOTER */
+
+footer {
+    background: #29204f;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #ded8f4;
+    margin: 7px 0;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .feature-section {
+        padding: 45px 5%;
+    }
+
+    .feature-card {
+        padding: 20px;
+    }
+
+    .about h2, .feature-section h2 {
+        font-size: 26px;
+    }
+}

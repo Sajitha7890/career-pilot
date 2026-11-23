@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerPilot | Discover Your Future</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">CareerPilot</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#discovery">Discovery</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Discover Your Future With CareerPilot</h1>
+        <p>Explore careers, identify your skills and build a roadmap towards your dream profession.</p>
+        <a href="#discovery" class="btn">Get Started</a>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <h2>About CareerPilot</h2>
+    <p>CareerPilot helps students discover suitable career paths, understand required skills and plan their learning journey through simple interactive tools.</p>
+</section>
+
+<section id="discovery" class="feature-section">
+    <h2>Career Discovery</h2>
+    <p>Tell us about your interests and skills to explore career options.</p>
+
+    <form id="careerForm" class="feature-card">
+        <label>What are your interests?</label>
+        <input type="text" id="interests" placeholder="Example: coding, design, business" required>
+
+        <label>What skills do you have?</label>
+        <input type="text" id="skills" placeholder="Example: Python, communication" required>
+
+        <label>What are your hobbies?</label>
+        <input type="text" id="hobbies" placeholder="Example: drawing, solving problems" required>
+
+        <button type="submit" class="main-btn">Find My Career</button>
+    </form>
+
+    <div id="careerResults" class="result-box hidden">
+        <h3>Your Career Matches</h3>
+        <div id="careerList"></div>
+        <button id="makeRoadmap" class="main-btn">Create My Roadmap</button>
+    </div>
+</section>
+
+<section id="roadmap" class="feature-section">
+    <h2>Career Roadmap</h2>
+    <p>Choose a career to explore your learning journey.</p>
+
+    <div class="feature-card">
+        <label>Select Career</label>
+        <select id="roadmapCareer">
+            <option>Software Developer</option>
+            <option>AI Engineer</option>
+            <option>UI/UX Designer</option>
+            <option>Data Analyst</option>
+            <option>Digital Marketer</option>
+        </select>
+
+        <button id="showRoadmap" class="main-btn">Show Roadmap</button>
+        <div id="roadmapResult"></div>
+    </div>
+</section>
+
+<section class="feature-section">
+    <h2>Skill Gap Analyzer</h2>
+    <p>Find out which skills you need to improve.</p>
+
+    <div class="feature-card">
+        <label>Select your career</label>
+        <select id="skillCareer">
+            <option>Software Developer</option>
+            <option>AI Engineer</option>
+            <option>UI/UX Designer</option>
+            <option>Data Analyst</option>
+            <option>Digital Marketer</option>
+        </select>
+
+        <label>Enter your current skills (separate with commas)</label>
+        <input type="text" id="currentSkills" placeholder="Example: Python, Git">
+
+        <button id="analyzeSkills" class="main-btn">Analyze My Skills</button>
+        <div id="skillResult"></div>
+    </div>
+</section>
+
+<section class="feature-section">
+    <h2>Career Guidance Chat</h2>
+    <p>Ask questions about careers and learning paths.</p>
+
+    <div class="feature-card">
+        <div id="chatMessages" class="chat-messages">
+            <div class="bot-message">Hello! Welcome to CareerPilot. Ask me about careers, skills or learning paths.</div>
+        </div>
+
+        <form id="chatForm">
+            <input type="text" id="chatQuestion" placeholder="Type your question..." required>
+            <button type="submit" class="main-btn">Send</button>
+        </form>
+    </div>
+</section>
+
+<section class="feature-section">
+    <h2>Career Simulation</h2>
+    <p>Try a sample task from your chosen career.</p>
+
+    <div class="feature-card">
+        <label>Select a career</label>
+        <select id="simulationCareer">
+            <option>Software Developer</option>
+            <option>UI/UX Designer</option>
+            <option>Data Analyst</option>
+            <option>Digital Marketer</option>
+        </select>
+
+        <button id="startSimulation" class="main-btn">Start Simulation</button>
+        <div id="simulationTask"></div>
+    </div>
+</section>
+
+<footer id="contact">
+    <h3>CareerPilot</h3>
+    <p>Explore Your Interests. Build Your Future.</p>
+    <p>© 2026 CareerPilot. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
